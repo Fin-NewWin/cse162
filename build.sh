@@ -1,10 +1,7 @@
 #!/bin/sh
 
-xhost local:root
-XAUTH=/tmp/.docker.XAUTH
-
 sudo docker rm -f and
-sudo docker build -t android_docker . --build-arg 'ACCEPT_EULA=Y'
+sudo docker build -t android_docker . --build-arg
 
 sudo docker run -idt \
     --name=and\
