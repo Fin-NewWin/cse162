@@ -1,7 +1,7 @@
 #!/bin/sh
 
 sudo docker rm -f and
-sudo docker build -t android_docker . --build-arg
+sudo docker build -t android_docker .
 
 sudo docker run -idt \
     --name=and\
