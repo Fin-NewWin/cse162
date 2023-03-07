@@ -1,0 +1,68 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\pagestyle{fancy}
+\rhead{Quaternion Exercise}
+\lhead{\textbf{Phien Nguyen}}
+
+\begin{document}
+1. What is the Quaternion that would rotate this vector by 90 degrees around the zaxis?
+\\
+$$
+     \begin{aligned}
+         q & = cos(45) + 0sin(45)i + 0sin(45)j + 1sin(45)k
+         \\
+         q & = \frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2}k
+         \\
+     \end{aligned}
+$$
+
+2. What quaternion would rotate this vector by 90 degrees around the y-axis?
+\\
+$$
+    \begin{aligned}
+        q & = cos(45) + 0sin(45)i + 1sin(45)j + 0sin(45)k
+        \\
+        q & = \frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2}j
+        \\
+    \end{aligned}
+$$
+
+3. What will we have by rotating vector v using the quaternion in question 1 and then using the quaternion in question 2?
+$$
+    \begin{aligned}
+        v' & = qvq^{-1}
+        \\
+        & = (\frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2}k)(2i + 2j)(\frac{\sqrt{2}}{2} - \frac{\sqrt{2}}{2}k)
+        \\
+        & = (\sqrt{2}i + \sqrt{2}ki + \sqrt{2}j + \sqrt{2}kj)(\frac{\sqrt{2}}{2} - \frac{\sqrt{2}}{2}k)
+        \\
+        & = 2\sqrt{2}j(\frac{\sqrt{2}}{2} - \frac{\sqrt{2}}{2}k) = 2j - 2jk = 2j -2i
+        \\
+        v' & = (\frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2}j)(2j - 2i)(\frac{\sqrt{2}}{2} - \frac{\sqrt{2}}{2}j)
+        \\
+        & = \sqrt{2}j + \sqrt{2}j^{2} - \sqrt{2}i - \sqrt{2}ji(\frac{\sqrt{2}}{2} - \frac{\sqrt{2}}{2}j)
+        \\
+        & = 2j + 2k
+    \end{aligned}
+$$
+4. What is the quaternion that achieves the same rotation results by combining quaternion in question 1 and 2? In other words, what quaternion can we use to rotate the vector v to the result of question 3?
+$$
+    \begin{aligned}
+        q & = -\frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2}j
+        \\
+        v' & = qvq'
+        \\
+        & = (-\frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2}j)(2i + 2j)(-\frac{\sqrt{2}}{2} - \frac{\sqrt{2}}{2}j)
+        \\
+        & = -\sqrt{2}i + \sqrt{2}ji - \sqrt{2}j + \sqrt{2}j^{2}(-\frac{\sqrt{2}}{2} - \frac{\sqrt{2}}{2}j)
+        \\
+        & = i + k + j + 1 - ij + jk + j^{2} + j
+        \\
+        q' & = 2j + 2k
+    \end{aligned}
+$$
+
+\end{document}

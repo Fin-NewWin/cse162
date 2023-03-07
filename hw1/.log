@@ -1,0 +1,41 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./quaternion_exercise.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-04-10>
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(./quaternion_exercise.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 $
+      $
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.13 $
+      $
+!  ==> Fatal error occurred, no output PDF file produced!
+Transcript written on quaternion_exercise.log.
