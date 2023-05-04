@@ -19,6 +19,3 @@ or to simply run android studio without logging in
 ```sh
 ./run.sh
 ```
-
-
-

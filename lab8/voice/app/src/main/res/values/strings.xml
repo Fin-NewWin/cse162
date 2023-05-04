@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">voice</string>
+    <string name="emergency_number" />
+</resources>
